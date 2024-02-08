@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/skins/color-1.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Style Swetcher -->
+  <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="assets/css/style-switcher.css">
+  <!-- sweetalert -->
+  <link rel="stylesheet" href="assets/sweetalert2/dist/sweetalert2.min.css">
+  <title>OTA-Payment</title>
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Pembayaran</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">KIRIM DATA PEMBAYARAN</h3>
+          <h4 class="contact-sub-title padd-15">Pencatatan Pembayaran OTA</h4>
+          <!-- contact form -->
+          <div class="row">
+            <form class="contact-form padd-15" name="kirim-ke-google-sheet">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="date" class="form-control" name="tgl">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Nama">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="number" class="form-control" name="kredit" placeholder="Jumlah Bayar">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="bank" placeholder="Bank Penyaluran">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="desc" id="" class="form-control" placeholder="Deskripsi"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" class="btn btn-kirim">Submit</button>
+                  <button type="submit" class="btn btn-loading hidden"><i class="fa fa-spinner fa-spin"></i> Loading...</button>
+                </div>
+              </div>
+            </form>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Cntent End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Style Swicher Start -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style Swicher End -->
+
+  <!-- Js Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="assets/js/javascript.js"></script>
+  <script src="assets/js/style-switcher.js"></script>
+  <script src="assets/sweetalert2/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
